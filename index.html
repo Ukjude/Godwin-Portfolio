@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./analyse.png" type="image/x-icon">
+    <title>GODWIN BENEDICT PORTFOLIO</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://cdn.boxicons.com/3.0.4/fonts/animations.min.css" rel="stylesheet">
+ <link href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+ 
+
+ <!-- EMAIL JS LINK -->
+ <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+     </script>
+       <script type="text/javascript">
+      (function(){
+      emailjs.init({
+        publicKey: "xhoCUtMyM6NZR9jZk",
+      });
+   })();
+     </script>
+ </head>
+ <body>
+    <header>
+    <nav class="nav-bar">
+        <div class="logo">GODWIN BENEDICT</div>
+        <div class="linked-list">
+ <!-- SIDE BAR -->
+ <ul class="sidebar">
+            <li onclick= closeSideBar()><img src="./cancel.png" class="cancel" alt=""></li>
+               <li><a href="#home">Home</a></li>
+               <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+               <li><a href="#projects">Projects</a></li>            
+               <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+
+     <!-- NAV BAR -->
+            <ul class="listing">
+               <li class="hidemobile"><a href="#home"><span class="material-symbols-outlined">
+ home
+ </span>Home</a></li>
+
+               <li class="hidemobile"><a href="#about"><span class="material-symbols-outlined">
+ movie_info
+ </span>About</a></li>
+ <li class="hidemobile"><a href="#services"><span class="material-symbols-outlined">
+ linked_services
+ </span>Services</a></li>
+               <li class="hidemobile"><a href="#projects"><span class="material-symbols-outlined">
+ folder_copy
+ </span>Projects</a></li>            
+               <li class="hidemobile"><a href="#contact"><span class="material-symbols-outlined">
+ mail
+</span>Contact</a></li>
+<li onclick=showSideBar() class="show"><img src="./menu.png " id="menu" ></li>
+            </ul>
+        </div>
+    </nav> 
+    </header>
+    <main>
+        <!--   HERO SECTION -->
+       <div class="hero-section" id="home">
+        <div class="hero-text">
+                <h1>Hello, I'm Godwin Benedict</h1>
+                <h3 >And I'm a <span class="typing"></span> </h3>
+                <p>Transforming data into actionable insights 
+           with Excel,Power BI, SQL, and Python</p>
+           <div class="social-links">
+            <a href=""><img src="./whatsapp (2).png" alt=""></a>
+            <a href=""><img src="./instagram (1).png" alt=""></a>
+            <a href=""><img src="./social (1).png" alt=""></a>
+            <a href=""><img src="./twitter (2).png" alt=""></a>
+           </div>
+           <a href="#" download class="download-btn"><i class="material-symbols-outlined">download</i><span>Download CV</span></a>
+          </div>
+           <div class="hero-image">
+              <img src="./sky.jpg" class="hr-image" alt="">
+           </div>
+       </div>
+       <!-- ABOUT -->
+        <div class="about-container" id="about">
+            <div class="about-image">
+            <img src="./sky.jpg" class="abt-img" alt="">
+            </div>
+            <div class="about-text">
+              <h2>About <span >Me </span> </h2>
+
+            <p>I'm a data analyst with strong expertise in transforming raw data into clear, actionable insights.
+                 I work with Excel, Power BI, SQL, and Python to analyze trends, build intuitive dashboards, and support data-driven decision-making.
+                  I'm passionate about solving problems, improving efficiency, and turning complex information into meaningful solutions that help businesses grow.</p>
+            </div>
+
+        </div>
+
+
+
+        
+
+        <!-- SERVICES -->
+         <div class="Services-container" id="services">
+           <div class="services-text"><h2>My <span>Services</span></h2></div>
+            <div class="services-box">
+           <div class="services sql">
+           <i class="bx bxs-database " style="color:#4ECFD0; font-size:70px;"></i>
+            <h3>Sql</h3>
+            <p>Database querying, joins, subqueries, data manipulation</p>
+           </div>
+           <div class="services Python">
+            <i class='bxr  bxs-report ' style='color:#4ECFD0 ;font-size:70px;'></i> 
+             <h3>Phython</h3>
+                    <p>Data analysis, visualization, and machine learning</p>
+           </div>
+           <div class="services Power-bi">
+            <i class='bxr  bxs-widget ' style='color:#4ECFD0 ;font-size:70px;'></i>
+            <h3>Power Bi</h3> 
+            <p>Data modeling, DAX, Power Query, dashboard storytelling</p>
+           </div>
+           <div class="services excel">
+            <i class='bxr  bxs-table ' style='color:#4ECFD0 ;font-size:70px;'></i> 
+            
+            <h3>Excel</h3>
+                        <p>Data cleaning, pivot tables, conditional formatting, and reporting</p>
+           </div>
+           </div>
+         </div>
+
+        <!-- PROJECTS -->
+         <div class="projects-container" id="projects">
+            <div class="project-text">
+        <h2 class="head-text">My <span>Project</span> </h2>
+    <p>Whether you need insights from complex data or a dashboard that tells your story, I transform raw data into actionable analytics and visual solutions</p>
+</div> 
+<div class="projects-columns">
+           <div class="project-card adidas">
+    <div class="img-cont"><img src="./adidas.jpg" alt=""></div>
+    <div class="text-cont">
+    <h3>Adidas Excel Sales Dashboard</h3>
+    <p>A dynamic Excel dashboard analyzing Adidas sales data, tracking revenue trends, and providing actionable insights for strategic decision-making.</p>
+    <a href=""  >SEE DETAILS</a>
+    </div>
+</div>
+<div class="project-card Verdura">
+    <div class="img-cont"><img src="./zendura.jpg" alt=""></div>
+    <div class="text-cont">
+    <h3>Verdura Superstore Dashboard</h3>
+    <p>An interactive dashboard visualizing Verdura Superstore's sales performance, inventory levels, and customer trends for effective business monitoring</p>
+    <a href="">SEE DETAILS</a>
+    </div>
+</div>
+<div class="project-card sales">
+    <div class="img-cont"><img src="./sales report.jpg" alt=""></div>
+    <div class="text-cont">
+    <h3>Sales Report Dashboard</h3>
+    <p>A comprehensive sales report dashboard offering real-time metrics, performance comparisons, and key analytics to optimize sales strategies.</p>
+    <a href="">SEE DETAILS</a>
+    </div>
+</div>
+</div>
+</div>
+      
+         <!-- CONTACT -->
+         <div class="contact-container" id="contact">
+          <div class="contact-text">
+            <h2>Contact Me!</h2>
+            
+          </div>
+          <div class="contact-box">
+            <div class="c-text">
+                <p> I'm always open to discuss exciting projects and new opportunities.Let's collaborate!</p>
+               
+                    <div class="item-box">
+                <div class="item1"><i class='bxr  bxs-envelope-alt' style='color:black'></i><p> godwinbenedict10@gmail.com</p></div>
+                <div class="item2"><i class='bxr  bxs-phone' style='color:black'></i><p >+234 9157274227 </p></div>
+                <div class="item3"><i class='bxr  bxs-location' style='color:black'></i><p>Lagos,Nigeria </p></div>
+                </div>
+                <div class="form-icon">
+                <img src="./github (2).png" alt="">
+                <img src="./linkedin (3).png" alt="">
+                <img src="./whatsapp (3).png" alt=""></div>
+            </div>
+            <div class="c-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <textarea placeholder="Your Message" id="message" name="message" required ></textarea>
+                <button type="submit" onclick="sendMail()">Send Message</button>
+            </div>
+          </div>
+
+          </div>
+
+ 
+    </main>
+    <button id="backToTop" title="Go to top">
+  <span class="material-symbols-outlined">arrow_upward</span>
+</button>
+    <footer>
+        <div class="footer-bottom">
+    <p>&copy; 2025 Godwin Benedict. All rights reserved</p>
+        </div>
+        
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
