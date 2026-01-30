@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./analyse.png" type="image/x-icon">
@@ -19,26 +19,57 @@
  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
  
 
- <!-- EMAIL JS LINK -->
  <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-     </script>
-       <script type="text/javascript">
-      (function(){
+</script>
+<script type="text/javascript">
+   (function(){
       emailjs.init({
         publicKey: "xhoCUtMyM6NZR9jZk",
       });
    })();
-     </script>
+</script>
  </head>
  <body>
+
+
+
+<!-- LOADER -->
+ <div id="loader">
+    
+
+  <div class="loader-wrapper">
+ <h1 class="loader-title">Welcome to <span style="color: cyan;">my portfolio</span></h1>
+    <!-- SVG Line Chart -->
+    <svg viewBox="0 0 300 100" class="chart">
+      <polyline
+        points="0,80 50,60 100,70 150,40 200,55 250,30 300,45"
+        class="chart-line"
+      />
+      <circle cx="50" cy="60" r="4" class="chart-dot" />
+      <circle cx="100" cy="70" r="4" class="chart-dot" />
+      <circle cx="150" cy="40" r="4" class="chart-dot" />
+      <circle cx="200" cy="55" r="4" class="chart-dot" />
+      <circle cx="250" cy="30" r="4" class="chart-dot" />
+    </svg>
+   
+    <p class="loading-text">Analyzing data…</p>
+
+  </div>
+</div>
+
+
+
+
+
+
     <header>
     <nav class="nav-bar">
-        <div class="logo">GODWIN BENEDICT</div>
+        <div class="logo">GODWIN <span style="color: cyan;">BENEDICT</span></div>
         <div class="linked-list">
  <!-- SIDE BAR -->
  <ul class="sidebar">
-            <li onclick= closeSideBar()><img src="./cancel.png" class="cancel" alt=""></li>
+            <li onclick= closeSideBar()><img src="./close.png" class="cancel" alt=""></li>
                <li><a href="#home">Home</a></li>
                <li><a href="#about">About</a></li>
               <li><a href="#services">Services</a></li>
@@ -66,7 +97,7 @@
                <li class="hidemobile"><a href="#contact"><span class="material-symbols-outlined">
  mail
 </span>Contact</a></li>
-<li onclick=showSideBar() class="show"><img src="./menu.png " id="menu" ></li>
+<li onclick=showSideBar() class="show"><img src="./list (1).png " id="menu" ></li>
             </ul>
         </div>
     </nav> 
@@ -80,12 +111,12 @@
                 <p>Transforming data into actionable insights 
            with Excel,Power BI, SQL, and Python</p>
            <div class="social-links">
-            <a href=""><img src="./whatsapp (2).png" alt=""></a>
-            <a href=""><img src="./instagram (1).png" alt=""></a>
-            <a href=""><img src="./social (1).png" alt=""></a>
-            <a href=""><img src="./twitter (2).png" alt=""></a>
+            <a href="https://wa.me/+2349157274227" target="_blank"><img  src="./whatsapp (2).png" alt=""></a>
+            <a href="" target="_blank"><img  src="./instagram (1).png" alt=""></a>
+            <a href="" target="_blank"><img  src="./business.png" alt=""></a>
+            <a href="https://x.com/frbenn_icl" target="_blank"><img   src="./social-media.png" alt=""></a>
            </div>
-           <a href="#" download class="download-btn"><i class="material-symbols-outlined">download</i><span>Download CV</span></a>
+           <a href="./godwin cv.docx" download class="download-btn"><i class="material-symbols-outlined">download</i><span>Download CV</span></a>
           </div>
            <div class="hero-image">
               <img src="./sky.jpg" class="hr-image" alt="">
@@ -97,7 +128,7 @@
             <img src="./sky.jpg" class="abt-img" alt="">
             </div>
             <div class="about-text">
-              <h2>About <span >Me </span> </h2>
+              <h2>About <span style="color: cyan;" >Me </span> </h2>
 
             <p>I'm a data analyst with strong expertise in transforming raw data into clear, actionable insights.
                  I work with Excel, Power BI, SQL, and Python to analyze trends, build intuitive dashboards, and support data-driven decision-making.
@@ -112,25 +143,25 @@
 
         <!-- SERVICES -->
          <div class="Services-container" id="services">
-           <div class="services-text"><h2>My <span>Services</span></h2></div>
+           <div class="services-text"><h2>My <span style="color: cyan;">Services</span></h2></div>
             <div class="services-box">
            <div class="services sql">
-           <i class="bx bxs-database " style="color:#4ECFD0; font-size:70px;"></i>
+           <img src="./sql-server.png" alt="">
             <h3>Sql</h3>
             <p>Database querying, joins, subqueries, data manipulation</p>
            </div>
            <div class="services Python">
-            <i class='bxr  bxs-report ' style='color:#4ECFD0 ;font-size:70px;'></i> 
-             <h3>Phython</h3>
+            <img src="./python (1).png" alt="">
+             <h3>Python</h3>
                     <p>Data analysis, visualization, and machine learning</p>
            </div>
            <div class="services Power-bi">
-            <i class='bxr  bxs-widget ' style='color:#4ECFD0 ;font-size:70px;'></i>
+            <img src="./Untitled design (13).png" alt="">
             <h3>Power Bi</h3> 
             <p>Data modeling, DAX, Power Query, dashboard storytelling</p>
            </div>
            <div class="services excel">
-            <i class='bxr  bxs-table ' style='color:#4ECFD0 ;font-size:70px;'></i> 
+            <img src="./excel-file.png" alt="">
             
             <h3>Excel</h3>
                         <p>Data cleaning, pivot tables, conditional formatting, and reporting</p>
@@ -141,7 +172,7 @@
         <!-- PROJECTS -->
          <div class="projects-container" id="projects">
             <div class="project-text">
-        <h2 class="head-text">My <span>Project</span> </h2>
+        <h2 class="head-text">My <span style="color: cyan;">Project</span> </h2>
     <p>Whether you need insights from complex data or a dashboard that tells your story, I transform raw data into actionable analytics and visual solutions</p>
 </div> 
 <div class="projects-columns">
@@ -157,7 +188,7 @@
     <div class="img-cont"><img src="./zendura.jpg" alt=""></div>
     <div class="text-cont">
     <h3>Verdura Superstore Dashboard</h3>
-    <p>An interactive dashboard visualizing Verdura Superstore's sales performance, inventory levels, and customer trends for effective business monitoring</p>
+    <p>An interactive dashboard visualizing Verdura Superstore's sales performance for effective business monitoring</p>
     <a href="">SEE DETAILS</a>
     </div>
 </div>
@@ -175,7 +206,7 @@
          <!-- CONTACT -->
          <div class="contact-container" id="contact">
           <div class="contact-text">
-            <h2>Contact Me!</h2>
+            <h2>Contact <span style="color: cyan;"> Me!</span></h2>
             
           </div>
           <div class="contact-box">
@@ -188,16 +219,17 @@
                 <div class="item3"><i class='bxr  bxs-location' style='color:black'></i><p>Lagos,Nigeria </p></div>
                 </div>
                 <div class="form-icon">
-                <img src="./github (2).png" alt="">
-                <img src="./linkedin (3).png" alt="">
-                <img src="./whatsapp (3).png" alt=""></div>
+                <a href="https://github.com/mustang007-hot"><img src="./github (2).png" alt=""></a>
+                <a href=""><img src="./linkedin (3).png" alt=""></a>
+                <a href="https://wa.me/+2349157274227" target="_blank"><img src="./whatsapp (3).png" alt=""></a>
+              </div>
             </div>
             <div class="c-form">
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
                 <input type="email" id="email" name="email" placeholder="Your Email" required>
                 <input type="text" id="subject" name="subject" placeholder="Subject" required>
                 <textarea placeholder="Your Message" id="message" name="message" required ></textarea>
-                <button type="submit" onclick="sendMail()">Send Message</button>
+                <button type="button" onclick="sendEmail()">Send Message</button>
             </div>
           </div>
 
@@ -209,6 +241,7 @@
   <span class="material-symbols-outlined">arrow_upward</span>
 </button>
     <footer>
+      <hr class="footer-hr">
         <div class="footer-bottom">
     <p>&copy; 2025 Godwin Benedict. All rights reserved</p>
         </div>

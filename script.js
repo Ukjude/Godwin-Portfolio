@@ -1,6 +1,6 @@
 // Typing Effect
 const typing = document.querySelector(".typing");
-const textArray = ["Data Analyst","Excel Expert", "Power BI Expert", "SQL Developer", "Python Enthusiast"];
+const textArray = ["Data Analyst","Excel Expert", "Power BI Expert", "SQL Developer", "Python Enthusiast","Data Consultant"];
 let textIndex = 0, charIndex = 0;
 
 function type() {
@@ -12,6 +12,8 @@ function type() {
     setTimeout(erase, 1500);
   }
 }
+
+
 
 function erase() {
   if (charIndex > 0) {
@@ -25,16 +27,55 @@ function erase() {
 }
 document.addEventListener("DOMContentLoaded", type);
 
-
-
+// SIDE BAR
+const sidebar = document.querySelector('.sidebar');
 function showSideBar(){
-  const sidebar = document.querySelector('.sidebar');
-  sidebar.style.display = 'flex';
+  sidebar.classList.add("active");
 }
+
 function closeSideBar(){
-  const sidebar = document.querySelector('.sidebar');
-  sidebar.style.display = 'none';
+  sidebar.classList.remove("active");
 }
+// Force sidebar closed on page load
+window.addEventListener("DOMContentLoaded", () => {
+  sidebar.classList.remove("active");
+});
+
+let resizeTimer;
+
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimer);
+
+  resizeTimer = setTimeout(() => {
+    if(window.innerWidth > 880){
+      sidebar.classList.remove("active");
+    }
+  }, 150);
+});
+document.querySelectorAll(".sidebar a").forEach(link => {
+  link.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+  });
+});
+
+
+// LOADING EFFECT
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  const site = document.getElementById("site");
+
+  // Minimum loader display time (2 seconds)
+  setTimeout(() => {
+    loader.classList.add("hide");
+    site.classList.add("show");
+  }, 3000);
+});
+
+
+
+
+
+
 
 // Back to Top Button
 const backToTopButton = document.getElementById("backToTop");
@@ -59,14 +100,23 @@ backToTopButton.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
-// EMAIL JS
-function sendMail(){
-  let parms = {
-    name : document.getElementById("name").value,
-    email : document.getElementById("email").value,
-    subject : document.getElementById("subject").value,
-    messsage : document.getElementById("message").value,
-  }
 
-  emailjs.send("service_33iuqcw","template_l0ks4bd",parms).then(alert("Email Sent !!"))
+
+// EMAIL JS
+function sendEmail(){
+  const templateParams = {
+    name: document.querySelector("#name").value,
+    email: document.querySelector("#email").value,
+    subject: document.querySelector("#subject").value,
+    message: document.querySelector("#message").value,
+  };
+
+  emailjs
+  .send("service_37tgpv4", "template_4jnibg1" , templateParams)
+  .then(()=> {
+     alert("Email Sent!!");
+  })
+    .catch(()=> {
+      alert("Email not sent !!");
+    })
 }
