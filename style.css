@@ -494,7 +494,7 @@ letter-spacing: normal;
 .services{
   padding: 20px;
   width: 250px;
-  height: 350px;
+  height: 330px;
   border: 3px solid #4ECFD0;
    box-shadow: 
     0 4px 15px rgba(0, 0, 0, 0.2),   
@@ -516,7 +516,7 @@ width: 120px;
 text-align: left;
 }
 .services h3{
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 10px;
   line-height: 1.5;
 letter-spacing: normal;
@@ -1019,6 +1019,7 @@ flex-direction: column;
   flex-direction: column;
   margin-left: 118px;
 }
+
 .services-box {
     display: grid;
     grid-template-columns: repeat(2, 300px);
@@ -1033,7 +1034,9 @@ flex-direction: column;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 40px 10px;
   }
+  
   .services:hover {
     transform: none;
   }
@@ -1328,7 +1331,7 @@ align-items: center;
     font-size: 16px;
   }
   .services h3{
-    font-size: 20px;
+    font-size: 28px;
   }
   .projects-container{
     display: flex;

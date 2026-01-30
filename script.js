@@ -3,26 +3,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-gsap.from(".hero-text h1", {
-  x: -80,
-  opacity: 0,
-  duration: 1,
-  delay: 0.3
-});
 
-gsap.from(".hero-text h3", {
-  x: -80,
-  opacity: 0,
-  duration: 1,
-  delay: 0.6
-});
 
-gsap.from(".hero-image img", {
-  scale: 0.7,
-  opacity: 0,
-  duration: 1.2,
-  delay: 0.8
-});
 
 gsap.from(".about-image", {
   scrollTrigger: "about-container",
@@ -38,12 +20,7 @@ gsap.from(".about-text", {
   duration: 1
 })
 
-gsap.from(".services-box", {
-  scrollTrigger: "Services-container",
-  y: 80,
-  opacity: 0,
-  duration: 1
-})
+
 
 
 
@@ -64,13 +41,7 @@ gsap.from(".c-form", {
 });
 
 
-gsap.to(".hero-image img", {
-  y: 20,
-  duration: 3,
-  repeat: -1,
-  yoyo: true,
-  ease: "sine.inOut"
-});
+
 
 
 
@@ -85,7 +56,7 @@ gsap.to(".hero-image img", {
 
 // Typing Effect
 const typing = document.querySelector(".typing");
-const textArray = ["Data Analyst","Excel Expert", "Power BI Expert", "SQL Developer", "Python Enthusiast","Data Consultant"];
+const textArray = ["Data Analyst","Excel Expert", "Power BI Expert", "SQL Developer", "Python Expert","Data Consultant"];
 let textIndex = 0, charIndex = 0;
 
 function type() {
